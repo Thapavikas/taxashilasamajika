@@ -6,6 +6,7 @@ import Members from "../components/home/Members";
 import Stats from "../components/home/Stats";
 import MissionVision from "../components/home/MissionVision ";
 import ContactHero from "../components/home/ContactHero";
+import Homegallery from "../components/home/Homegallery";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <MissionVision/>
       <FocusAreas />
       <Members />
+      <Homegallery/>
       <ContactHero />
     </>
   );

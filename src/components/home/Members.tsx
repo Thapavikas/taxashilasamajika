@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { membersData } from "../../data/members";
 
 const Members = () => {
@@ -38,9 +39,13 @@ const Members = () => {
             </div>
           ))}
         </div>
-        <button className=" " >
-          See the Team
-        </button>
+        <div className="text-center mt-12">
+          <Link to="/team">
+            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition duration-300 shadow-lg">
+              See All Memebrs
+            </button>
+          </Link>
+        </div>
       </div>
     </section>
   );

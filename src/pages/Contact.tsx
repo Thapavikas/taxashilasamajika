@@ -6,7 +6,7 @@ const Contact = () => {
         className="relative h-[420px] bg-cover bg-center flex items-center"
         style={{ backgroundImage: "url('/src/assets/images/contact-banner.jpg')" }}
       >
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/50" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full text-center">
           <h1 className="font-heading text-[48px] md:text-[56px] font-bold text-white mb-4">

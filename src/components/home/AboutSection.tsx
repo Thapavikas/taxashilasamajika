@@ -1,31 +1,15 @@
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-        {/* Image cluster */}
-        <div className="relative flex justify-center">
-          <div className="relative w-[320px] h-[380px]">
-            {/* Image 1 */}
-            <img
-              src="/src/assets/images/about-1.jpg"
-              alt="about"
-              className="absolute top-0 left-0 w-40 h-56 object-cover rounded-[80px]"
-            />
-
-            {/* Image 2 */}
-            <img
-              src="/src/assets/images/about-2.jpg"
-              alt="about"
-              className="absolute top-20 right-0 w-48 h-64 object-cover rounded-[90px]"
-            />
-
-            {/* Image 3 */}
-            <img
-              src="/src/assets/images/about-3.jpg"
-              alt="about"
-              className="absolute bottom-0 left-16 w-44 h-56 object-cover rounded-[85px]"
-            />
-          </div>
+        <div className="relative w-full h-[420px] rounded-[32px] overflow-hidden shadow-xl">
+          <img
+            src="/Home/home6.jpeg"
+            alt="About us"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         {/* Content */}
@@ -52,12 +36,14 @@ const About = () => {
           </p>
 
           {/* CTA */}
+          <Link to="/about" >
           <button
             className="mt-8 px-8 py-3 rounded-full text-white text-sm font-semibold"
             style={{ backgroundColor: "#F2A31B" }}
           >
             Discover More
           </button>
+          </Link>
         </div>
       </div>
     </section>

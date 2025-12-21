@@ -1,11 +1,12 @@
+import heroImg from "/gallery/9.jpeg";
 const Hero = () => {
   return (
     <section
       className="relative min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/src/assets/images/hero.jpg')" }}
+      style={{ backgroundImage: `url(${heroImg})` }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-36">
@@ -34,9 +35,14 @@ const Hero = () => {
             </button>
 
             {/* Secondary CTA */}
-            <button className="px-9 py-[14px] rounded-full text-[13px] border border-white/60 text-white hover:bg-white hover:text-black transition">
+            <a
+              href="https://wa.me/919448224434"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-9 py-[14px] rounded-full text-[13px] border border-white/60 text-white hover:bg-white hover:text-black transition"
+            >
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
       </div>

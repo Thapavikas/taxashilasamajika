@@ -1,12 +1,13 @@
+import AboutImg from "/Home/home8.jpeg"
+
 const About = () => {
   return (
     <>
-      {/* PAGE HEADER */}
       <section
         className="relative h-[420px] bg-cover bg-center flex items-center"
-        style={{ backgroundImage: "url('/src/assets/images/about-banner.jpg')" }}
+        style={{ backgroundImage: `url(${AboutImg})` }}
       >
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/50" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full text-center">
           <h1 className="font-heading text-[48px] md:text-[56px] font-bold text-white mb-4">
@@ -21,11 +22,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* ABOUT CONTENT */}
       <section className="py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-          
-          {/* TEXT CONTENT */}
           <div>
             <p
               className="text-sm font-semibold mb-4"
@@ -57,18 +55,35 @@ const About = () => {
             </p>
           </div>
 
-          {/* IMAGE CARDS */}
           <div className="grid grid-cols-2 gap-6">
-            <div className="h-56 bg-[#E5E7EB] rounded-2xl flex items-center justify-center text-[#9CA3AF]">
-              Image Placeholder
+            {/* Image 1 */}
+            <div className="relative h-56 rounded-2xl overflow-hidden group cursor-pointer">
+              <img
+                src="/Home/home6.jpeg"
+                alt="gallery"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition" />
             </div>
 
-            <div className="h-56 bg-[#E5E7EB] rounded-2xl flex items-center justify-center text-[#9CA3AF]">
-              Image Placeholder
+            {/* Image 2 */}
+            <div className="relative h-56 rounded-2xl overflow-hidden group cursor-pointer">
+              <img
+                src="/Home/home7.jpeg"
+                alt="gallery"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition" />
             </div>
 
-            <div className="h-56 bg-[#E5E7EB] rounded-2xl flex items-center justify-center text-[#9CA3AF] col-span-2">
-              Image Placeholder
+            {/* Image 3 (wide) */}
+            <div className="relative h-56 col-span-2 rounded-2xl overflow-hidden group cursor-pointer">
+              <img
+                src="/Home/home8.jpeg"
+                alt="gallery"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition" />
             </div>
           </div>
         </div>
@@ -106,9 +121,7 @@ const About = () => {
                 >
                   {item.title}
                 </h3>
-                <p className="text-[#6B7280] leading-relaxed">
-                  {item.text}
-                </p>
+                <p className="text-[#6B7280] leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>

@@ -5,6 +5,7 @@ import Contact from "../pages/Contact";
 import Members from "../pages/memeber";
 import Volunter from "../pages/volunter";
 import Activiteis from "../pages/Activiteis";
+import Gallery from "../pages/Gallery";
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const AppRoutes = () => {
       <Route path="/team" element={<Members />} />
       <Route path="/volunter" element={<Volunter />} />
       <Route path="/activities" element={<Activiteis />} />
+      <Route path="/gallery" element={<Gallery />} />
     </Routes>
   );
 };

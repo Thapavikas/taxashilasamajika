@@ -51,6 +51,12 @@ const Navbar = () => {
           >
             Activities
           </NavLink>
+          <NavLink
+            to="/gallery"
+            className={({ isActive }) => (isActive ? activeClass : linkClass)}
+          >
+            Gallery
+          </NavLink>
 
           <NavLink
             to="/contact-us"
