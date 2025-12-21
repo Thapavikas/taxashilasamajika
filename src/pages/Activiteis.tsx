@@ -26,7 +26,6 @@ const Activities = () => {
   return (
     <section className="py-28 bg-[#F9FAFB]">
       <div className="max-w-7xl mx-auto px-6">
-
         {/* Heading */}
         <div className="text-center mb-20">
           <p className="text-sm font-semibold tracking-widest text-[#F2A31B] mb-4">
@@ -82,7 +81,6 @@ const Activities = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

@@ -1,10 +1,12 @@
+import logo from "../../assets/logo.png";
+
 const Loader = () => {
     return (
       <div className="fixed inset-0 z-[9999] bg-[#f9f7f3] flex flex-col items-center justify-center">
         
         {/* Logo */}
         <img
-          src="/logo.png" // <-- your company logo
+          src={logo}
           alt="Company Logo"
           className="w-28 mb-6 animate-pulse"
         />

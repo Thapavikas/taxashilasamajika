@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import logo from "../../assets/logo.png";
 const Navbar = () => {
   const linkClass = "text-sm font-medium transition hover:text-[#F2A31B]";
 
@@ -11,9 +11,10 @@ const Navbar = () => {
         {/* LOGO */}
         <NavLink
           to="/"
-          className="font-heading text-xl font-bold text-[#111827]"
+          className="font-heading flex items-center gap-2 text-xl font-bold text-[#111827]"
         >
-          TAXASHILA
+          <img src={logo} className=" w-16 " alt="" />
+          <span> TAXASHILA</span>
         </NavLink>
 
         {/* NAV LINKS */}
