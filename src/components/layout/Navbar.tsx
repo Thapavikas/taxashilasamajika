@@ -1,9 +1,24 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import logo from "../../assets/logo.png";
-const Navbar = () => {
-  const linkClass = "text-sm font-medium transition hover:text-[#F2A31B]";
 
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const linkClass =
+    "block py-2 text-sm font-medium transition hover:text-[#F2A31B]";
   const activeClass = "text-[#F2A31B] font-semibold";
+
+  const navLinks = [
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About" },
+    { to: "/team", label: "Team" },
+    { to: "/volunter", label: "Volunteer" },
+    { to: "/activities", label: "Activities" },
+    { to: "/gallery", label: "Gallery" },
+    { to: "/contact-us", label: "Contact" },
+  ];
 
   return (
     <header className="fixed top-0 w-full z-50 bg-white shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
@@ -11,70 +26,70 @@ const Navbar = () => {
         {/* LOGO */}
         <NavLink
           to="/"
-          className="font-heading flex items-center gap-2 text-xl font-bold text-[#111827]"
+          className="flex items-center gap-2 text-xl font-bold text-[#111827]"
         >
-          <img src={logo} className=" w-16 " alt="" />
-          <span> TAXASHILA</span>
+          <img src={logo} className="w-14" alt="Taxashila" />
+          <span>TAXASHILA</span>
         </NavLink>
 
-        {/* NAV LINKS */}
+        {/* DESKTOP NAV */}
         <nav className="hidden md:flex gap-8 text-[#6B7280]">
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? activeClass : linkClass)}
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            className={({ isActive }) => (isActive ? activeClass : linkClass)}
-          >
-            About
-          </NavLink>
-
-          <NavLink
-            to="/team"
-            className={({ isActive }) => (isActive ? activeClass : linkClass)}
-          >
-            Team
-          </NavLink>
-
-          <NavLink
-            to="/volunter"
-            className={({ isActive }) => (isActive ? activeClass : linkClass)}
-          >
-            Volunteer
-          </NavLink>
-          <NavLink
-            to="/activities"
-            className={({ isActive }) => (isActive ? activeClass : linkClass)}
-          >
-            Activities
-          </NavLink>
-          <NavLink
-            to="/gallery"
-            className={({ isActive }) => (isActive ? activeClass : linkClass)}
-          >
-            Gallery
-          </NavLink>
-
-          <NavLink
-            to="/contact-us"
-            className={({ isActive }) => (isActive ? activeClass : linkClass)}
-          >
-            Contact
-          </NavLink>
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) =>
+                isActive ? activeClass : linkClass
+              }
+            >
+              {link.label}
+            </NavLink>
+          ))}
         </nav>
 
-        {/* DONATE BUTTON */}
+        {/* DONATE BUTTON (Desktop) */}
         <button
-          className="px-6 py-2 rounded-full text-sm font-semibold text-white transition"
+          className="hidden md:block px-6 py-2 rounded-full text-sm font-semibold text-white"
           style={{ backgroundColor: "#F2A31B" }}
         >
           Donate
         </button>
+
+        {/* MOBILE MENU BUTTON */}
+        <button
+          className="md:hidden text-gray-700"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <X size={26} /> : <Menu size={26} />}
+        </button>
       </div>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="md:hidden bg-white border-t shadow-lg">
+          <nav className="px-6 py-4 space-y-2 text-[#6B7280]">
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                onClick={() => setOpen(false)}
+                className={({ isActive }) =>
+                  isActive ? activeClass : linkClass
+                }
+              >
+                {link.label}
+              </NavLink>
+            ))}
+
+            <button
+              className="w-full mt-4 px-6 py-2 rounded-full text-sm font-semibold text-white"
+              style={{ backgroundColor: "#F2A31B" }}
+            >
+              Donate
+            </button>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
