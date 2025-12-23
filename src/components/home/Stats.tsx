@@ -29,7 +29,7 @@ const Stats = () => {
               <CountUp
                 start={0}
                 end={stat.value}
-                duration={5}
+                duration={8}
                 separator=""
               />
               {stat.suffix || ""}
