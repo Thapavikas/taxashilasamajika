@@ -59,7 +59,7 @@ const ContactHero = () => {
                 >
                   📞
                 </span>
-                <span>9448224434 / 7760166943</span>
+                <span>  7760166943 / 9448224434 </span>
               </div>
             </div>
           </div>

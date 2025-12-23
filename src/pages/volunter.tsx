@@ -27,7 +27,9 @@ const Volunter = () => {
       {/* PAGE HEADER */}
       <section
         className="relative h-[420px] bg-cover bg-center flex items-center"
-        style={{ backgroundImage: "url('/src/assets/images/volunteer-banner.jpg')" }}
+        style={{
+          backgroundImage: "url('/src/assets/images/volunteer-banner.jpg')",
+        }}
       >
         <div className="absolute inset-0 bg-black/50" />
 
@@ -43,11 +45,41 @@ const Volunter = () => {
         </div>
       </section>
 
+      {/* VOLUNTEERS GALLERY */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <p
+            className="text-sm font-semibold text-center mb-4"
+            style={{ color: "#F2A31B" }}
+          >
+            OUR VOLUNTEERS
+          </p>
+
+          <h2 className="font-heading text-[38px] font-bold text-[#1F2937] text-center mb-6">
+            People Making a Difference
+          </h2>
+
+          <p className="text-[#6B7280] text-center max-w-2xl mx-auto mb-16">
+            Our volunteers are the heart of our mission. Their dedication and
+            compassion help us create real change in communities.
+          </p>
+
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {[1, 2, 3, 4].map((item) => (
+              <div
+                key={item}
+                className="h-[260px] bg-[#E5E7EB] rounded-2xl flex items-center justify-center text-[#9CA3AF]"
+              >
+                Volunteer Image
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* WHY VOLUNTEER */}
       <section className="py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-          
-          {/* Text */}
           <div>
             <p
               className="text-sm font-semibold mb-4"
@@ -72,7 +104,6 @@ const Volunter = () => {
             </p>
           </div>
 
-          {/* Image Placeholder */}
           <div className="h-[420px] bg-[#E5E7EB] rounded-2xl flex items-center justify-center text-[#9CA3AF]">
             Image Placeholder
           </div>
@@ -115,8 +146,6 @@ const Volunter = () => {
       {/* VOLUNTEER FORM */}
       <section className="py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-          
-          {/* Form */}
           <div>
             <p
               className="text-sm font-semibold mb-4"
@@ -149,6 +178,37 @@ const Volunter = () => {
                 className="w-full px-5 py-4 rounded-xl border border-[#E5E7EB] focus:outline-none focus:border-[#F2A31B]"
               />
 
+              {/* IMAGE UPLOAD */}
+              <div>
+                <label className="block text-sm font-medium text-[#374151] mb-2">
+                  Upload Your Photo
+                </label>
+
+                <div className="relative border-2 border-dashed border-[#E5E7EB] rounded-xl p-6 text-center hover:border-[#F2A31B] transition">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                  />
+
+                  <div className="flex flex-col items-center gap-3">
+                    <div className="w-12 h-12 rounded-full bg-[#FFF4E0] flex items-center justify-center text-xl">
+                      📤
+                    </div>
+
+                    <p className="text-sm text-[#374151] font-medium">
+                      Click to upload or drag & drop
+                    </p>
+
+                    <p className="text-xs text-[#9CA3AF]">PNG, JPG up to 5MB</p>
+                  </div>
+                </div>
+
+                <p className="text-xs text-[#9CA3AF] mt-2">
+                  This photo will be used only for volunteer identification.
+                </p>
+              </div>
+
               <textarea
                 rows={5}
                 placeholder="Why do you want to volunteer?"
@@ -157,7 +217,7 @@ const Volunter = () => {
 
               <button
                 type="submit"
-                className="px-8 py-4 rounded-full text-white text-sm font-semibold"
+                className="px-8 py-4 rounded-full text-white text-sm font-semibold hover:opacity-90 transition"
                 style={{ backgroundColor: "#F2A31B" }}
               >
                 Submit Application
@@ -165,7 +225,6 @@ const Volunter = () => {
             </form>
           </div>
 
-          {/* Image Placeholder */}
           <div className="h-[480px] bg-[#E5E7EB] rounded-2xl flex items-center justify-center text-[#9CA3AF]">
             Image Placeholder
           </div>

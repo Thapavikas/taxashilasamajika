@@ -18,7 +18,7 @@ const About = () => {
             className="font-semibold text-sm mb-3"
             style={{ color: "#F2A31B" }}
           >
-            Welcome To Taxashila
+            Welcome To TSHMAS
           </p>
 
           <h2 className="font-heading text-4xl font-bold text-[#1F2937] mb-6">
@@ -31,8 +31,8 @@ const About = () => {
           </p>
 
           <p className="text-[#6B7280] leading-relaxed max-w-lg">
-            The organization works in rural development, education, environment,
-            and women empowerment across six blocks of Bagalkot district.
+            The organization works in rural development, education, special education, environment,
+            and women empowerment across six district in Karnataka State.
           </p>
 
           {/* CTA */}

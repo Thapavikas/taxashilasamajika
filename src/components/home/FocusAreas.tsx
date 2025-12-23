@@ -1,15 +1,14 @@
 const areas = [
-  { title: "Rural Development", icon: "🌾" },
-  { title: "Education", icon: "📘" },
-  { title: "Environment", icon: "🌱" },
-  { title: "Women Empowerment", icon: "👩‍👧" },
+  { title: "Rural Development", icon: "🌾", color: "#92400E" }, // earth
+  { title: "Education / Special Education", icon: "📘", color: "#2563EB" }, // trust
+  { title: "Environment", icon: "🌱", color: "#15803D" }, // nature
+  { title: "Women Empowerment", icon: "👩‍👧", color: "#BE185D" }, // strength + care
 ];
 
 const FocusAreas = () => {
   return (
     <section className="py-28 bg-[#F9FAFB]">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-        
         {/* LEFT CONTENT */}
         <div>
           <p
@@ -49,13 +48,16 @@ const FocusAreas = () => {
                 {area.icon}
               </div>
 
-              <h3 className="font-semibold text-[18px] text-[#111827]">
+              {/* Header with Meaning-Based Color */}
+              <h3
+                className="font-semibold text-[18px]"
+                style={{ color: area.color }}
+              >
                 {area.title}
               </h3>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

@@ -1,8 +1,10 @@
+import CountUp from "react-countup";
+
 const stats = [
-  { value: "6", label: "Blocks Covered", icon: "📍" },
-  { value: "2009", label: "Founded", icon: "🏛️" },
-  { value: "1000+", label: "Beneficiaries", icon: "🤝" },
-  { value: "4", label: "Focus Areas", icon: "🌍" },
+  { value: 6, label: "Districts Covered", icon: "📍" },
+  { value: 2009, label: "Founded", icon: "🏛️" },
+  { value: 20000, suffix: "+", label: "Beneficiaries", icon: "🤝" },
+  { value: 8, label: "Focus Areas", icon: "🌍" },
 ];
 
 const Stats = () => {
@@ -19,12 +21,18 @@ const Stats = () => {
               {stat.icon}
             </div>
 
-            {/* Number */}
+            {/* Animated Number */}
             <h3
               className="text-[38px] font-bold mb-1"
               style={{ color: "#F2A31B" }}
             >
-              {stat.value}
+              <CountUp
+                start={0}
+                end={stat.value}
+                duration={5}
+                separator=""
+              />
+              {stat.suffix || ""}
             </h3>
 
             {/* Label */}
