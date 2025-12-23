@@ -21,18 +21,21 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 w-full z-50 bg-white shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+        
         {/* LOGO */}
-        <NavLink
-          to="/"
-          className="flex items-center gap-2 text-xl font-bold text-[#111827]"
-        >
-          <img src={logo} className="w-14" alt="Taxashila" />
-          <span>
-            TAXASHILA SAMAJIKA
-            <br />
-            <span className=" text-sm"> HAGU MAHILA ABHIVRADDHI SANSTHE </span>
-          </span>
+        <NavLink to="/" className="flex items-center gap-3">
+          <img src={logo} className="w-12 sm:w-14" alt="Taxashila" />
+
+          {/* Responsive Text */}
+          <div className="leading-tight max-w-[200px] sm:max-w-none">
+            <p className="text-sm sm:text-base font-bold text-[#111827]">
+              TAXASHILA SAMAJIKA
+            </p>
+            <p className="text-[10px] sm:text-xs text-gray-600">
+              HAGU MAHILA ABHIVRADDHI SANSTHE
+            </p>
+          </div>
         </NavLink>
 
         {/* DESKTOP NAV */}
@@ -41,17 +44,19 @@ const Navbar = () => {
             <NavLink
               key={link.to}
               to={link.to}
-              className={({ isActive }) => (isActive ? activeClass : linkClass)}
+              className={({ isActive }) =>
+                isActive ? activeClass : linkClass
+              }
             >
               {link.label}
             </NavLink>
           ))}
         </nav>
 
-        {/* DONATE BUTTON (Desktop) */}
-        <NavLink to="/donate">
+        {/* DONATE BUTTON (Desktop only) */}
+        <NavLink to="/donate" className="hidden md:block">
           <button
-            className="w-full mt-4 px-6 py-2 rounded-full text-sm font-semibold text-white"
+            className="px-6 py-2 rounded-full text-sm font-semibold text-white"
             style={{ backgroundColor: "#F2A31B" }}
           >
             Donate
@@ -70,7 +75,7 @@ const Navbar = () => {
       {/* MOBILE MENU */}
       {open && (
         <div className="md:hidden bg-white border-t shadow-lg">
-          <nav className="px-6 py-4 space-y-2 text-[#6B7280]">
+          <nav className="px-6 py-4 space-y-3 text-[#6B7280]">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
@@ -83,7 +88,9 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <NavLink to="/donate">
+
+            {/* Donate Button (Mobile Menu) */}
+            <NavLink to="/donate" onClick={() => setOpen(false)}>
               <button
                 className="w-full mt-4 px-6 py-2 rounded-full text-sm font-semibold text-white"
                 style={{ backgroundColor: "#F2A31B" }}
