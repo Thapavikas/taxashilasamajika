@@ -13,7 +13,6 @@ const Navbar = () => {
   const navLinks = [
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
-    { to: "/team", label: "Team" },
     { to: "/volunter", label: "Volunteer" },
     { to: "/activities", label: "Activities" },
     { to: "/gallery", label: "Gallery" },
@@ -29,7 +28,11 @@ const Navbar = () => {
           className="flex items-center gap-2 text-xl font-bold text-[#111827]"
         >
           <img src={logo} className="w-14" alt="Taxashila" />
-          <span>TAXASHILA</span>
+          <span>
+            TAXASHILA SAMAJIKA
+            <br />
+            <span className=" text-sm"> HAGU MAHILA ABHIVRADDHI SANSTHE </span>
+          </span>
         </NavLink>
 
         {/* DESKTOP NAV */}
@@ -38,9 +41,7 @@ const Navbar = () => {
             <NavLink
               key={link.to}
               to={link.to}
-              className={({ isActive }) =>
-                isActive ? activeClass : linkClass
-              }
+              className={({ isActive }) => (isActive ? activeClass : linkClass)}
             >
               {link.label}
             </NavLink>
@@ -48,12 +49,14 @@ const Navbar = () => {
         </nav>
 
         {/* DONATE BUTTON (Desktop) */}
-        <button
-          className="hidden md:block px-6 py-2 rounded-full text-sm font-semibold text-white"
-          style={{ backgroundColor: "#F2A31B" }}
-        >
-          Donate
-        </button>
+        <NavLink to="/donate">
+          <button
+            className="w-full mt-4 px-6 py-2 rounded-full text-sm font-semibold text-white"
+            style={{ backgroundColor: "#F2A31B" }}
+          >
+            Donate
+          </button>
+        </NavLink>
 
         {/* MOBILE MENU BUTTON */}
         <button
@@ -80,13 +83,14 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-
-            <button
-              className="w-full mt-4 px-6 py-2 rounded-full text-sm font-semibold text-white"
-              style={{ backgroundColor: "#F2A31B" }}
-            >
-              Donate
-            </button>
+            <NavLink to="/donate">
+              <button
+                className="w-full mt-4 px-6 py-2 rounded-full text-sm font-semibold text-white"
+                style={{ backgroundColor: "#F2A31B" }}
+              >
+                Donate
+              </button>
+            </NavLink>
           </nav>
         </div>
       )}

@@ -38,6 +38,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>Rural Development</li>
               <li>Education</li>
+              <li>Special Education</li>
               <li>Environment</li>
               <li>Women Empowerment</li>
             </ul>
@@ -71,7 +72,7 @@ const Footer = () => {
         <div className="border-t border-gray-700">
           <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-sm">
             <p>
-              © {new Date().getFullYear()} TAXASHILA. All rights reserved.
+              © {new Date().getFullYear()}  Taxashila Samajika Hagu Mahila Abhivraddhi Sansthe. All rights reserved.
             </p>
   
             <p className="mt-3 md:mt-0">

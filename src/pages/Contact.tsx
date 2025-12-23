@@ -4,7 +4,9 @@ const Contact = () => {
       {/* PAGE HEADER */}
       <section
         className="relative h-[420px] bg-cover bg-center flex items-center"
-        style={{ backgroundImage: "url('/src/assets/images/contact-banner.jpg')" }}
+        style={{
+          backgroundImage: "url('/src/assets/images/contact-banner.jpg')",
+        }}
       >
         <div className="absolute inset-0 bg-black/50" />
 
@@ -24,50 +26,78 @@ const Contact = () => {
       {/* CONTACT INFO CARDS */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-          {[
-            {
-              title: "Our Location",
-              text: "Ilkal – 587125, Karnataka",
-              icon: "📍",
-            },
-            {
-              title: "Email Address",
-              text: "taxashila.sansthe@gmail.com",
-              icon: "📧",
-            },
-            {
-              title: "Phone Number",
-              text: "9448224434 / 7760166943",
-              icon: "📞",
-            },
-          ].map((item) => (
+          {/* LOCATION */}
+          <div className="bg-[#F9FAFB] rounded-2xl p-8 text-center shadow-[0_12px_35px_rgba(0,0,0,0.08)]">
             <div
-              key={item.title}
-              className="bg-[#F9FAFB] rounded-2xl p-8 text-center shadow-[0_12px_35px_rgba(0,0,0,0.08)]"
+              className="w-14 h-14 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl"
+              style={{ backgroundColor: "#FFF4E0" }}
             >
-              <div
-                className="w-14 h-14 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl"
-                style={{ backgroundColor: "#FFF4E0" }}
-              >
-                {item.icon}
-              </div>
-
-              <h3 className="font-semibold text-[18px] text-[#111827] mb-2">
-                {item.title}
-              </h3>
-
-              <p className="text-[#6B7280] text-sm">
-                {item.text}
-              </p>
+              📍
             </div>
-          ))}
+
+            <h3 className="font-semibold text-[18px] text-[#111827] mb-2">
+              Our Location
+            </h3>
+
+            <p className="text-[#6B7280] text-sm">Ilkal – 587125, Karnataka</p>
+          </div>
+
+          {/* EMAIL */}
+          <div className="bg-[#F9FAFB] rounded-2xl p-8 text-center shadow-[0_12px_35px_rgba(0,0,0,0.08)]">
+            <div
+              className="w-14 h-14 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl"
+              style={{ backgroundColor: "#FFF4E0" }}
+            >
+              📧
+            </div>
+
+            <h3 className="font-semibold text-[18px] text-[#111827] mb-2">
+              Email Address
+            </h3>
+
+            <a
+              href="mailto:taxashila.sansthe@gmail.com"
+              className="text-[#6B7280] text-sm hover:text-[#F2A31B] transition block"
+            >
+              taxashila.sansthe@gmail.com
+            </a>
+          </div>
+
+          {/* PHONE */}
+          <div className="bg-[#F9FAFB] rounded-2xl p-8 text-center shadow-[0_12px_35px_rgba(0,0,0,0.08)]">
+            <div
+              className="w-14 h-14 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl"
+              style={{ backgroundColor: "#FFF4E0" }}
+            >
+              📞
+            </div>
+
+            <h3 className="font-semibold text-[18px] text-[#111827] mb-3">
+              Phone Number
+            </h3>
+
+            <div className="space-y-1 text-sm">
+              <a
+                href="tel:+919448224434"
+                className="block text-[#6B7280] hover:text-[#F2A31B] transition"
+              >
+                +91 94482 24434
+              </a>
+
+              <a
+                href="tel:+917760166943"
+                className="block text-[#6B7280] hover:text-[#F2A31B] transition"
+              >
+                +91 77601 66943
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* CONTACT FORM + IMAGE */}
       <section className="py-28 bg-[#F9FAFB]">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-          
           {/* FORM */}
           <div>
             <p
