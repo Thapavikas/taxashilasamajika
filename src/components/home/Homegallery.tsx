@@ -38,7 +38,7 @@ const HomeGallery = () => {
               <img
                 src={img}
                 alt="Charity gallery"
-                className="w-full h-48 object-cover transform group-hover:scale-110 transition duration-500"
+                className="w-full h-auto object-contain transform group-hover:scale-110 transition duration-500"
               />
 
               {/* Hover Overlay */}

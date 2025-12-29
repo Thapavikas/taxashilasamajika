@@ -1,77 +1,9 @@
-type Category = "Environment" | "Health" | "Education";
-
-const activities: {
-  date: string;
-  title: string;
-  description: string;
-  image: string;
-  category: Category;
-}[] = [
-  {
-    date: "18-May-2020",
-    title: "Preparation of People’s Bio-Diversity Register (PBR)",
-    description:
-      "Survey and documentation of biodiversity zones including flora, fauna, and local natural resources with community participation.",
-    image: "/src/assets/images/activities/activity-1.jpg",
-    category: "Environment",
-  },
-  {
-    date: "29-Feb-2020",
-    title: "National AYUSH Mission – Yoga Training for School Teachers",
-    description:
-      "Yoga training programs for teachers and students to promote physical and mental well-being in schools.",
-    image: "/src/assets/images/activities/activity-2.jpg",
-    category: "Health",
-  },
-  {
-    date: "07-Feb-2020",
-    title: "Free AYUSH Health Checkup & Therapeutics Camp",
-    description:
-      "Health checkups and free medicines provided to people of all age groups through AYUSH medical practices.",
-    image: "/src/assets/images/activities/activity-3.jpg",
-    category: "Health",
-  },
-  {
-    date: "01-Apr-2024",
-    title: "Diversity, Cultural Values & Conservation of Wild Orchids",
-    description:
-      "Documentation of wild orchid diversity in Kodagu, their cultural significance, threats, and conservation strategies.",
-    image: "/src/assets/images/activities/activity-orchids.jpg",
-    category: "Environment",
-  },
-  {
-    date: "23-Jan-2022",
-    title: "AYUSH Seva Gram – Gadag District",
-    description:
-      "Implementation of AYUSH Seva Gram scheme across multiple taluks focusing on community healthcare.",
-    image: "/src/assets/images/activities/activity-ayush-gadag.jpg",
-    category: "Health",
-  },
-  {
-    date: "26-Dec-2022",
-    title: "AYUSH Seva Gram – Bagalkot District",
-    description:
-      "Healthcare outreach under AYUSH Seva Gram program covering villages across Bagalkot district.",
-    image: "/src/assets/images/activities/activity-ayush-bagalkot.jpg",
-    category: "Health",
-  },
-  {
-    date: "08-Mar-2023",
-    title: "Dyslexia Awareness Program",
-    description:
-      "Awareness program on Dyslexia covering identification, support strategies, and government schemes.",
-    image: "/src/assets/images/activities/activity-dyslexia.jpg",
-    category: "Education",
-  },
-];
-
+import { useNavigate } from "react-router-dom";
+import { activities, type Category } from "../data/activities";
 
 const categoryStyles: Record<
   Category,
-  {
-    badge: string;
-    accent: string;
-  }
+  { badge: string; accent: string }
 > = {
   Environment: {
     badge: "bg-green-100 text-green-700",
@@ -88,6 +20,8 @@ const categoryStyles: Record<
 };
 
 const Activities = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-28 bg-[#F9FAFB]">
       <div className="max-w-7xl mx-auto px-6">
@@ -103,13 +37,14 @@ const Activities = () => {
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-12">
-          {activities.map((item, index) => (
+          {activities.map((item) => (
             <div
-              key={index}
-              className="group bg-white rounded-[32px] overflow-hidden
-            shadow-[0_20px_45px_rgba(0,0,0,0.08)]
-            hover:-translate-y-4 hover:shadow-[0_30px_70px_rgba(0,0,0,0.12)]
-            transition-all duration-500"
+              key={item.id}
+              onClick={() => navigate(`/activities/${item.id}`)}
+              className="cursor-pointer group bg-white rounded-[32px] overflow-hidden
+              shadow-[0_20px_45px_rgba(0,0,0,0.08)]
+              hover:-translate-y-4 hover:shadow-[0_30px_70px_rgba(0,0,0,0.12)]
+              transition-all duration-500"
             >
               {/* Image */}
               <div className="relative h-60 overflow-hidden">
@@ -119,22 +54,22 @@ const Activities = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
 
-                {/* Meaning-based gradient */}
+                {/* Gradient */}
                 <div
                   className={`absolute inset-0 bg-gradient-to-t ${
-                    categoryStyles[item.category]?.accent
+                    categoryStyles[item.category].accent
                   } via-black/10 to-transparent`}
                 />
 
                 {/* Date */}
-                <span className="absolute top-5 left-5 bg-white/95 backdrop-blur px-4 py-1 rounded-full text-xs font-semibold text-[#111827] shadow">
+                <span className="absolute top-5 left-5 bg-white/95 backdrop-blur px-4 py-1 rounded-full text-xs font-semibold shadow">
                   {item.date}
                 </span>
 
-                {/* Category Badge */}
+                {/* Category */}
                 <span
                   className={`absolute top-5 right-5 px-3 py-1 rounded-full text-xs font-semibold
-     ${categoryStyles[item.category]?.badge}`}
+                  ${categoryStyles[item.category].badge}`}
                 >
                   {item.category}
                 </span>
@@ -149,6 +84,10 @@ const Activities = () => {
                 <p className="text-sm text-[#4B5563] leading-relaxed line-clamp-4">
                   {item.description}
                 </p>
+
+                <span className="inline-block mt-4 text-sm font-semibold text-[#F2A31B]">
+                  Read more →
+                </span>
               </div>
             </div>
           ))}
