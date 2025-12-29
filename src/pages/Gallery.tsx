@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const images = [
     "/Home/home1.jpeg",
     "/Home/home2.jpeg",
@@ -25,7 +29,7 @@ const Gallery = () => {
 
   return (
     <section className="bg-[#f9f7f3] min-h-screen">
-      {/* Page Header */}
+      {/* Header */}
       <div className="relative bg-gray-900 py-20">
         <div className="absolute inset-0">
           <img
@@ -42,30 +46,55 @@ const Gallery = () => {
         </div>
       </div>
 
-      {/* Gallery Grid */}
+      {/* Masonry Layout */}
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div className="columns-2 sm:columns-3 md:columns-4 gap-6 space-y-6">
           {images.map((img, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer"
+              onClick={() => setSelectedImage(img)}
+              className="relative break-inside-avoid overflow-hidden rounded-2xl shadow-lg group"
             >
               <img
                 src={img}
-                alt="Charity gallery"
-                className="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500"
+                alt="Gallery"
+                className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
               />
 
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                <span className="text-white font-semibold tracking-wide">
-                  View Image
-                </span>
+                <span className="text-white font-semibold">View Image</span>
               </div>
             </div>
           ))}
         </div>
       </div>
+      {/* FULL IMAGE MODAL */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center px-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div
+            className="relative max-w-5xl max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-10 right-0 text-white text-3xl font-bold"
+            >
+              ✕
+            </button>
+
+            <img
+              src={selectedImage}
+              alt="Full view"
+              className="w-auto h-auto max-h-[90vh] rounded-xl shadow-2xl"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 };
