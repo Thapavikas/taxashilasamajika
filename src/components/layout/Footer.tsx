@@ -49,10 +49,6 @@ const Footer = () => {
             <h4 className="font-semibold text-white mb-4">
               Contact Us
             </h4>
-            <p className="text-sm mb-2">
-              First room, Ratod Building, Near SHP (DPEP) School, Ilkal – 587125,
-              Karnataka
-            </p>
             <p className="text-sm">
               Email:{" "}
               <a

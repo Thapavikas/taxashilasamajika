@@ -1,10 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { activities, type Category } from "../data/activities";
 
-const categoryStyles: Record<
-  Category,
-  { badge: string; accent: string }
-> = {
+const categoryStyles: Record<Category, { badge: string; accent: string }> = {
   Environment: {
     badge: "bg-green-100 text-green-700",
     accent: "from-green-500/30",
@@ -60,11 +57,6 @@ const Activities = () => {
                     categoryStyles[item.category].accent
                   } via-black/10 to-transparent`}
                 />
-
-                {/* Date */}
-                <span className="absolute top-5 left-5 bg-white/95 backdrop-blur px-4 py-1 rounded-full text-xs font-semibold shadow">
-                  {item.date}
-                </span>
 
                 {/* Category */}
                 <span
