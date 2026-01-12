@@ -6,18 +6,43 @@ const volunteerRoles = [
   },
   {
     title: "Teaching & Education",
-    desc: "Support children through education and mentoring programs.",
+    desc: "Support children through education, mentoring, and inclusive learning programs.",
     icon: "📚",
   },
   {
+    title: "Special Educators",
+    desc: "Educators or professionals who can teach and support children with learning disabilities.",
+    icon: "🧩",
+  },
+  {
     title: "Environmental Action",
-    desc: "Participate in environmental protection and sustainability drives.",
+    desc: "Participate in environmental protection, sustainability, and conservation drives.",
     icon: "🌱",
+  },
+  {
+    title: "Taxonomy Experts",
+    desc: "Support biodiversity work through species identification, classification, and documentation.",
+    icon: "🔬",
   },
   {
     title: "Women Empowerment",
     desc: "Assist skill development and leadership programs for women.",
     icon: "👩‍👧",
+  },
+  {
+    title: "Fundraiser",
+    desc: "Help raise funds through campaigns, partnerships, and donor engagement.",
+    icon: "💰",
+  },
+  {
+    title: "Content Writer",
+    desc: "Create impactful content, stories, reports, and proposals for our initiatives.",
+    icon: "✍️",
+  },
+  {
+    title: "Social Media Handler",
+    desc: "Manage social media platforms, create content, and amplify our impact online.",
+    icon: "📱",
   },
 ];
 
@@ -99,8 +124,9 @@ const Volunter = () => {
             </p>
 
             <p className="text-[#6B7280] leading-relaxed">
-              Whether you’re passionate about education, social development, or
-              environmental protection, there’s a place for you here.
+              Whether you’re passionate about education, social development,
+              environmental protection, or digital outreach, there’s a place
+              for you here.
             </p>
           </div>
 
@@ -113,11 +139,18 @@ const Volunter = () => {
       {/* VOLUNTEER ROLES */}
       <section className="py-28 bg-[#F9FAFB]">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-heading text-[36px] font-bold text-[#1F2937] text-center mb-16">
+          <h2 className="font-heading text-[36px] font-bold text-[#1F2937] text-center mb-6">
             Volunteer Opportunities
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <p className="text-center text-[#6B7280] max-w-2xl mx-auto mb-16 text-sm">
+            Opportunities available for both <strong>short-term</strong> and{" "}
+            <strong>long-term</strong> engagement.
+            <br />
+            📍 <strong>Open for internships throughout the year</strong>
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {volunteerRoles.map((role) => (
               <div
                 key={role.title}
@@ -177,37 +210,6 @@ const Volunter = () => {
                 placeholder="Phone Number"
                 className="w-full px-5 py-4 rounded-xl border border-[#E5E7EB] focus:outline-none focus:border-[#F2A31B]"
               />
-
-              {/* IMAGE UPLOAD */}
-              <div>
-                <label className="block text-sm font-medium text-[#374151] mb-2">
-                  Upload Your Photo
-                </label>
-
-                <div className="relative border-2 border-dashed border-[#E5E7EB] rounded-xl p-6 text-center hover:border-[#F2A31B] transition">
-                  <input
-                    type="file"
-                    accept="image/*"
-                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                  />
-
-                  <div className="flex flex-col items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-[#FFF4E0] flex items-center justify-center text-xl">
-                      📤
-                    </div>
-
-                    <p className="text-sm text-[#374151] font-medium">
-                      Click to upload or drag & drop
-                    </p>
-
-                    <p className="text-xs text-[#9CA3AF]">PNG, JPG up to 5MB</p>
-                  </div>
-                </div>
-
-                <p className="text-xs text-[#9CA3AF] mt-2">
-                  This photo will be used only for volunteer identification.
-                </p>
-              </div>
 
               <textarea
                 rows={5}

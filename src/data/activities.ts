@@ -24,16 +24,16 @@ export const activities: Activity[] = [
     description:
       "Survey and documentation of biodiversity zones including flora, fauna, and local natural resources with community participation.",
     category: "Environment",
-    image: "/src/assets/images/activities/activity-1.jpeg",
+    image: "/images/activities/activity-1.jpeg",
     images: [
-      "/src/assets/images/activities/activity-1.jpeg",
-      "/src/assets/images/activities/activity-1-1.jpeg",
-      "/src/assets/images/activities/activity-1-2.jpeg",
-      "/src/assets/images/activities/activity-1-3.jpeg",
-      "/src/assets/images/activities/activity-1-4.jpeg",
-      "/src/assets/images/activities/activity-1-5.jpeg",
-      "/src/assets/images/activities/activity-1-6.jpeg",
-      "/src/assets/images/activities/activity-1-7.jpeg",
+      "/images/activities/activity-1.jpeg",
+      "/images/activities/activity-1-1.jpeg",
+      "/images/activities/activity-1-2.jpeg",
+      "/images/activities/activity-1-3.jpeg",
+      "/images/activities/activity-1-4.jpeg",
+      "/images/activities/activity-1-5.jpeg",
+      "/images/activities/activity-1-6.jpeg",
+      "/images/activities/activity-1-7.jpeg",
     ],
     sections: [
       {
@@ -86,10 +86,13 @@ export const activities: Activity[] = [
     description:
       "Yoga training programs for teachers and students to promote physical and mental well-being in schools.",
     category: "Health",
-    image: "/src/assets/images/activities/activity-2.jpeg",
+    image: "/images/activities/activity-2.jpeg",
     images: [
-      "/src/assets/images/activities/activity-2.jpeg",
-      "/src/assets/images/activities/activity-2-2.jpeg",
+      "/images/activities/activity-2.jpeg",
+      "/images/activities/activity-2-2.jpeg",
+      "/images/activities/activity-2-3.jpeg",
+      "/images/activities/activity-2-4.jpeg",
+      "/images/activities/activity-2-5.jpeg",
     ],
     sections: [
       {
@@ -132,14 +135,16 @@ export const activities: Activity[] = [
     description:
       "Health checkups and free medicines provided to people of all age groups through AYUSH medical practices.",
     category: "Health",
-    image: "/src/assets/images/activities/activity-3.jpg",
+    image: "/images/activities/activity-3.jpg",
     images: [
-      "/src/assets/images/activities/activity-3.jpg",
-      "/src/assets/images/activities/activity-3-2.jpg",
-      "/src/assets/images/activities/activity-3-3.jpg",
-      "/src/assets/images/activities/activity-3-4.jpg",
-      "/src/assets/images/activities/activity-3-5.jpg",
-      "/src/assets/images/activities/activity-3-6.jpg",
+      "/images/activities/activity-3.jpg",
+      "/images/activities/activity-3-2.jpg",
+      "/images/activities/activity-3-3.jpg",
+      "/images/activities/activity-3-4.jpg",
+      "/images/activities/activity-3-5.jpg",
+      "/images/activities/activity-3-6.jpg",
+      "/images/activities/activity-3-7.jpeg",
+      "/images/activities/activity-3-8.jpeg",
     ],
     sections: [
       {
@@ -181,15 +186,15 @@ export const activities: Activity[] = [
     description:
       "Documentation of wild orchid diversity, cultural significance, and conservation strategies.",
     category: "Environment",
-    image: "/src/assets/images/activities/orchids.jpeg",
+    image: "/images/activities/orchids.jpeg",
     images: [
-      "/src/assets/images/activities/orchids.jpeg",
-      "/src/assets/images/activities/orchids-2.jpeg",
-      "/src/assets/images/activities/orchids-3.jpeg",
-      "/src/assets/images/activities/orchids-4.jpeg",
-      "/src/assets/images/activities/orchids-5.jpeg",
-      "/src/assets/images/activities/orchids-6.jpeg",
-      "/src/assets/images/activities/orchids-7.jpeg",
+      "/images/activities/orchids.jpeg",
+      "/images/activities/orchids-2.jpeg",
+      "/images/activities/orchids-3.jpeg",
+      "/images/activities/orchids-4.jpeg",
+      "/images/activities/orchids-5.jpeg",
+      "/images/activities/orchids-6.jpeg",
+      "/images/activities/orchids-7.jpeg",
     ],
     sections: [
       {
@@ -231,15 +236,15 @@ export const activities: Activity[] = [
     description:
       "Awareness program focusing on identification, inclusive education, and support strategies for dyslexia.",
     category: "Education",
-    image: "/src/assets/images/activities/activity-dyslexia.jpg",
+    image: "/images/activities/activity-dyslexia.jpg",
     images: [
-      "/src/assets/images/activities/activity-dyslexia.jpg",
-      "/src/assets/images/activities/activity-dyslexia-2.jpg",
-      "/src/assets/images/activities/activity-dyslexia-3.jpg",
-      "/src/assets/images/activities/activity-dyslexia-4.jpg",
-      "/src/assets/images/activities/activity-dyslexia-5.jpg",
-      "/src/assets/images/activities/activity-dyslexia-6.jpg",
-      "/src/assets/images/activities/activity-dyslexia-7.jpg",
+      "/images/activities/activity-dyslexia.jpg",
+      "/images/activities/activity-dyslexia-2.jpg",
+      "/images/activities/activity-dyslexia-3.jpg",
+      "/images/activities/activity-dyslexia-4.jpg",
+      "/images/activities/activity-dyslexia-5.jpg",
+      "/images/activities/activity-dyslexia-6.jpg",
+      "/images/activities/activity-dyslexia-7.jpg",
     ],
     sections: [
       {
