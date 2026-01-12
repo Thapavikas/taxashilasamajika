@@ -5,7 +5,7 @@ const MissionVision = () => {
         
         {/* Heading */}
         <h2 className="text-center font-heading text-[36px] font-bold text-[#111827] mb-16">
-          Mission, Vision, and Objectives
+          Vision , Mission , and Objectives
         </h2>
 
         {/* Cards */}
