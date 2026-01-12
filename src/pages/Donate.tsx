@@ -49,7 +49,7 @@ const Donate = () => {
             </p>
           </div>
           {/* BANK DETAILS */}
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 mt-10 gap-12">
             {/* BANK BOX 1 */}
             <div className="bg-white rounded-3xl p-10 shadow-[0_20px_45px_rgba(0,0,0,0.08)] hover:-translate-y-2 transition">
               <h3 className="text-xl font-semibold text-[#111827] mb-6">
