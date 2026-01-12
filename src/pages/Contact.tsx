@@ -1,3 +1,5 @@
+import ContactHero from "../components/home/ContactHero";
+
 const Contact = () => {
   return (
     <>
@@ -78,17 +80,16 @@ const Contact = () => {
 
             <div className="space-y-1 text-sm">
               <a
-                href="tel:+919448224434"
-                className="block text-[#6B7280] hover:text-[#F2A31B] transition"
-              >
-                +91 94482 24434
-              </a>
-
-              <a
                 href="tel:+917760166943"
                 className="block text-[#6B7280] hover:text-[#F2A31B] transition"
               >
                 +91 77601 66943
+              </a>
+              <a
+                href="tel:+919448224434"
+                className="block text-[#6B7280] hover:text-[#F2A31B] transition"
+              >
+                +91 94482 24434
               </a>
             </div>
           </div>
@@ -130,6 +131,11 @@ const Contact = () => {
                 placeholder="Subject"
                 className="w-full px-5 py-4 rounded-xl border border-[#E5E7EB] focus:outline-none focus:border-[#F2A31B]"
               />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                className="w-full px-5 py-4 rounded-xl border border-[#E5E7EB] focus:outline-none focus:border-[#F2A31B]"
+              />
 
               <textarea
                 rows={5}
@@ -153,6 +159,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <ContactHero />
     </>
   );
 };

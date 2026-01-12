@@ -20,9 +20,8 @@ const Hero = () => {
             The Gift <br />
             Of Education.
           </h1>
-
           <p className="mt-7 text-gray-300 text-[15px] leading-relaxed max-w-md">
-            An integrated approach to build an equitable and empowered society.
+            We are empowered to protect the nature.
           </p>
 
           <div className="mt-10 flex gap-5">
