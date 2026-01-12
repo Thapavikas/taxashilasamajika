@@ -16,18 +16,7 @@ const Donate = () => {
         </div>
       </section>
 
-                {/* NOTE */}
-          <div className="mt-10 bg-blue-50 border border-blue-200 rounded-2xl p-6 text-[#1f2937]">
-            <p className="font-medium">📌 Important Note:</p>
-            <p className="mt-2">
-              • For <strong>FCRA (foreign contribution)</strong> transactions,
-              please use the
-              <strong> State Bank of India (SBI) FCRA account</strong> only.
-              <br />• For <strong>all Indian/domestic transactions</strong>,
-              payments can be made to
-              <strong> either SBI or Karnataka Gramin Bank accounts</strong>.
-            </p>
-          </div>
+ 
 
       {/* DONATION CONTENT */}
       <section className="py-28 bg-[#F9FAFB]">
@@ -47,6 +36,18 @@ const Donate = () => {
             </p>
           </div>
 
+                         {/* NOTE */}
+          <div className="mt-10 bg-blue-50 border border-blue-200 rounded-2xl p-6 text-[#1f2937]">
+            <p className="font-medium">📌 Important Note:</p>
+            <p className="mt-2">
+              • For <strong>FCRA (foreign contribution)</strong> transactions,
+              please use the
+              <strong> State Bank of India (SBI) FCRA account</strong> only.
+              <br />• For <strong>all Indian/domestic transactions</strong>,
+              payments can be made to
+              <strong> either SBI or Karnataka Gramin Bank accounts</strong>.
+            </p>
+          </div>
           {/* BANK DETAILS */}
           <div className="grid md:grid-cols-2 gap-12">
             {/* BANK BOX 1 */}
