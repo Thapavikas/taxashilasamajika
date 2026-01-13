@@ -41,13 +41,14 @@ const About = () => {
             <p className="text-[#6B7280] leading-relaxed mb-6">
               <strong className="text-[#1F2937] font-semibold">
                 Taxashila Samajika Hagu Mahila Abhivraddhi Sansthe (R), Karadi
+                Village, Ilkal Taluk, Bagalkot District
               </strong>
               , registered under No.{" "}
               <strong className="font-semibold">DRBGK/146/2009-10</strong>, has
               been actively engaged in{" "}
               <strong className="font-semibold">
                 organized social development work for over 16 years across
-                Karnataka
+                Karnataka India.
               </strong>
               . The organization has a proven track record in{" "}
               <strong className="font-semibold">
@@ -60,13 +61,13 @@ const About = () => {
             <p className="text-[#6B7280] leading-relaxed mb-6">
               In coordination with{" "}
               <strong className="font-semibold">
-                departments such as AYUSH, KMPB, BBMP, MSME, and Women & Child
-                Welfare
+                departments such as AYUSH, KMPB, KBB Department, BBMP, MSME, and
+                Women & Child Welfare
               </strong>
               , the Sansthe has implemented initiatives including{" "}
               <strong className="font-semibold">
                 AYUSH Sevagram programs, herbal garden development in schools,
-                ethnobotany programs
+                ethnobotany programs and taxonomy projects
               </strong>{" "}
               to document traditional knowledge,{" "}
               <strong className="font-semibold">

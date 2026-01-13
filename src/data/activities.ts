@@ -71,11 +71,12 @@ export const activities: Activity[] = [
       {
         title: "Outcomes and Impact",
         paragraphs: [
-          "The finalized PBR is validated by the local Biodiversity Management Committee (BMC) and compiled in accordance with NBA and State Biodiversity Board guidelines.",
-          "The register serves as a vital reference document for conservation planning, environmental impact assessments, and sustainable development initiatives.",
-          "It also safeguards community intellectual property rights and supports equitable benefit-sharing mechanisms."
+          "The finalized People’s Bio-Diversity Register (PBR) is validated by the local Biodiversity Management Committee (BMC) and compiled in accordance with statutory biodiversity guidelines.",
+          "The register serves as a vital reference document for conservation planning, environmental impact assessments, academic research, and sustainable development initiatives.",
+          "It supports research activities and acts as an important source document for patent applications and policy decisions of the Indian Government, while safeguarding community knowledge and promoting equitable benefit-sharing."
         ],
       },
+      
     ]
     
   },
@@ -188,13 +189,19 @@ export const activities: Activity[] = [
     category: "Environment",
     image: "/images/activities/orchids.jpeg",
     images: [
-      "/images/activities/orchids.jpeg",
       "/images/activities/orchids-2.jpeg",
-      "/images/activities/orchids-3.jpeg",
-      "/images/activities/orchids-4.jpeg",
-      "/images/activities/orchids-5.jpeg",
       "/images/activities/orchids-6.jpeg",
       "/images/activities/orchids-7.jpeg",
+      "/images/activities/orchids-8.jpeg",
+      "/images/activities/orchids-9.jpeg",
+      "/images/activities/orchids-10.jpeg",
+      "/images/activities/orchids-12.jpeg",
+      "/images/activities/orchids-13.jpeg",
+      "/images/activities/orchids-14.jpeg",
+      "/images/activities/orchids-15.jpeg",
+      "/images/activities/orchids-16.jpeg",
+    
+
     ],
     sections: [
       {
@@ -250,34 +257,113 @@ export const activities: Activity[] = [
       {
         title: "Program Overview",
         paragraphs: [
-          "The Dyslexia Awareness Program aims to promote early identification and appropriate support for children with learning difficulties.",
-          "The initiative focuses on reducing stigma and improving understanding of dyslexia among educators, parents, and school administrators."
+          "We have been conducting Dyslexia Awareness Programs for the past four years for NCC cadets, MSW and Sociology students, and the general public.",
+          "These programs promote social responsibility, community awareness, and active civic participation through interactive and practical learning approaches."
         ],
       },
       {
         title: "Awareness and Training",
         paragraphs: [
-          "Training sessions are conducted to help teachers and parents recognize early signs of dyslexia and other learning differences.",
-          "The program emphasizes inclusive teaching methodologies and classroom adaptations."
+          "The sessions focus on identifying dyslexia, understanding learning differences, and building empathy toward children with learning challenges.",
+          "Participants are introduced to inclusive education practices, appropriate classroom strategies, and positive behavioral approaches."
         ],
       },
       {
         title: "Support Strategies",
         points: [
-          "Inclusive and child-centered classroom practices",
-          "Parental guidance and home-based learning support",
-          "Access to government schemes, assessments, and special education resources"
+          "Inclusive and child-centered teaching methodologies",
+          "Empathy-building and stigma reduction practices",
+          "Guidance on appropriate treatment and referral systems",
+          "Promotion of dignity, respect, and non-punitive approaches for affected children"
         ],
       },
       {
-        title: "Outcome",
+        title: "Dyslexia Activities Outcomes",
         paragraphs: [
-          "The program fosters inclusive educational environments and empowers schools to support children with dyslexia effectively.",
-          "It contributes to improved academic confidence, emotional well-being, and long-term educational outcomes."
+          "The awareness programs reached over 500 participants, where initial awareness about dyslexia was only 1%.",
+          "The program significantly improved understanding of dyslexia, promoted empathy, and enhanced knowledge of appropriate treatment and inclusive teaching methods.",
+          "Participants pledged to treat affected children with dignity and committed to avoiding shaming, verbal abuse, or physical punishment, resulting in positive behavioral and attitudinal changes."
         ],
       },
-      
+    ],
+    
+  },
+  {
+    id: "street-tree-taxonomy",
+    title: "Street Tree Taxonomy",
+    description:
+      "Systematic documentation and classification of urban street trees to support biodiversity conservation and sustainable urban planning.",
+    category: "Environment",
+    image: "/images/activities/street-tree.jpeg",
+    images: [
+      "/images/activities/street-tree.jpeg",
+      "/images/activities/street-tree-2.jpeg",
+      "/images/activities/street-tree-3.jpeg",
+      "/images/activities/street-tree-4.jpeg",
+    ],
+    sections: [
+      {
+        title: "Overview",
+        paragraphs: [
+          "The Street Tree Taxonomy initiative, adopted from the BBMP Street Tree Taxonomy Project, is an urban biodiversity documentation effort aimed at systematically recording and classifying street trees within a defined geographical area.",
+          "The initiative supports urban environmental conservation by creating an authentic record of tree species, their distribution, and ecological value, while contributing to informed planning and sustainable management of urban green spaces."
+        ],
+      },
+      {
+        title: "Field Surveys and Data Collection",
+        paragraphs: [
+          "Extensive field surveys are conducted along city streets, avenues, and public road networks to document street trees in a structured and scientific manner.",
+          "The surveys focus on identifying tree species, recording scientific and common names, noting physical characteristics, assessing tree health, and capturing geographic coordinates in alignment with BBMP taxonomy standards."
+        ],
+      },
+      {
+        title: "Community and Stakeholder Participation",
+        paragraphs: [
+          "Community participation plays an important role in the documentation process. Local residents, students, environmental volunteers, and citizen groups contribute through field observations and data support activities.",
+          "Participatory approaches such as on-site surveys, geo-tagging, collaborative data validation, and awareness interactions help ensure accuracy and inclusiveness in the documentation process."
+        ],
+      },
+      {
+        title: "Key Components",
+        points: [
+          "Identification, classification, and mapping of street tree species",
+          "Documentation of tree health, canopy cover, and ecological benefits",
+          "Alignment with BBMP street tree taxonomy and documentation standards",
+          "Assessment of maintenance needs and environmental stress factors",
+          "Compilation of structured and verifiable street tree records"
+        ],
+      },
+      {
+        title: "Outcomes and Impact",
+        paragraphs: [
+          "The compiled street tree records are reviewed and validated in accordance with BBMP guidelines and urban forestry best practices.",
+          "The outcomes support tree conservation efforts, urban planning processes, environmental assessments, and long-term sustainability of urban green infrastructure."
+        ],
+      },
     ],
   },
+  {
+    id: "traditional-veterinary-practitioners",
+    title: "Identification of Traditional Veterinary Practitioners with Skills",
+    description:
+      "Identification and documentation of traditional veterinary practitioners possessing indigenous knowledge and skills related to animal healthcare.",
+    category: "Environment",
+    image: "/images/activities/veterinary-2.jpeg",
+    images: [
+      "/images/activities/veterinary-1.jpeg",
+      "/images/activities/veterinary-2.jpeg",
+      "/images/activities/veterinary-3.jpeg",
+      "/images/activities/veterinary-4.jpeg",
+     
+    ],
+    sections: [
+      {
+        title: "Activity Highlights",
+        paragraphs: [],
+        points: [],
+      },
+    ],
+  }
+  
 ];
 
