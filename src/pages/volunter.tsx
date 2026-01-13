@@ -25,6 +25,11 @@ const volunteerRoles = [
     icon: "🔬",
   },
   {
+    title: "Ethnobotany Experts",
+    desc: "Document traditional plant knowledge, medicinal uses, and support community-based conservation.",
+    icon: "🌿",
+  },
+  {
     title: "Women Empowerment",
     desc: "Assist skill development and leadership programs for women.",
     icon: "👩‍👧",
@@ -89,13 +94,21 @@ const Volunter = () => {
             compassion help us create real change in communities.
           </p>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((item) => (
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            {[
+              "/images/activities/orchids-3.jpeg",
+              "/images/activities/orchids-4.jpeg",
+              "/images/activities/orchids-5.jpeg",
+            ].map((item) => (
               <div
                 key={item}
-                className="h-[260px] bg-[#E5E7EB] rounded-2xl flex items-center justify-center text-[#9CA3AF]"
+                className="bg-[#E5E7EB]  rounded-2xl flex items-center justify-center text-[#9CA3AF]"
               >
-                Volunteer Image
+                <img
+                  src={item}
+                  alt="Volunteer activity"
+                  className="w-full h-full object-cover"
+                />
               </div>
             ))}
           </div>
@@ -125,8 +138,8 @@ const Volunter = () => {
 
             <p className="text-[#6B7280] leading-relaxed">
               Whether you’re passionate about education, social development,
-              environmental protection, or digital outreach, there’s a place
-              for you here.
+              environmental protection, or digital outreach, there’s a place for
+              you here.
             </p>
           </div>
 

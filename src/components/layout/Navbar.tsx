@@ -32,7 +32,7 @@ const Navbar = () => {
             <p className="text-sm sm:text-base font-bold text-[#111827]">
               TAXASHILA SAMAJIKA
             </p>
-            <p className="text-[10px] sm:text-xs text-gray-600">
+            <p className="text-[10px] sm:text-xs font-bold text-[#111827]">
               HAGU MAHILA ABHIVRADDHI SANSTHE
             </p>
           </div>
