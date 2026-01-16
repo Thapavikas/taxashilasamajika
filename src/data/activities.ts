@@ -1,4 +1,9 @@
-export type Category = "Environment" | "Health" | "Education";
+export type Category =
+  | "Environment"
+  | "Health"
+  | "Education"
+  | "Health & Environment";
+
 
 export type ActivitySection = {
   title: string;
@@ -251,7 +256,6 @@ export const activities: Activity[] = [
       "/images/activities/activity-dyslexia-4.jpg",
       "/images/activities/activity-dyslexia-5.jpg",
       "/images/activities/activity-dyslexia-6.jpg",
-      "/images/activities/activity-dyslexia-7.jpg",
     ],
     sections: [
       {
@@ -343,27 +347,167 @@ export const activities: Activity[] = [
     ],
   },
   {
-    id: "traditional-veterinary-practitioners",
-    title: "Identification of Traditional Veterinary Practitioners with Skills",
-    description:
-      "Identification and documentation of traditional veterinary practitioners possessing indigenous knowledge and skills related to animal healthcare.",
-    category: "Environment",
-    image: "/images/activities/veterinary-2.jpeg",
-    images: [
+    "id": "traditional-veterinary-practitioners",
+    "title": "Identification and Documentation of Traditional Veterinary Practitioners",
+    "description": "Identification and documentation of traditional veterinary practitioners possessing indigenous knowledge and skills related to animal healthcare.",
+    "category": "Environment",
+    "image": "/images/activities/veterinary-2.jpeg",
+    "images": [
       "/images/activities/veterinary-1.jpeg",
       "/images/activities/veterinary-2.jpeg",
       "/images/activities/veterinary-3.jpeg",
-      "/images/activities/veterinary-4.jpeg",
-     
+      "/images/activities/veterinary-4.jpeg"
+    ],
+    "sections": [
+      {
+        "title": "Activity Highlights",
+        "paragraphs": [
+          "Traditional veterinary knowledge plays a vital role in rural livelihoods and livestock health. Recognizing the importance of preserving this indigenous wisdom, Taxashila Samajika Hagu Mahila Abhivraddhi Sansthe (R) undertook a focused initiative to identify and document Traditional Veterinary Practitioners across selected regions.",
+          "Through extensive fieldwork, our organization identified 27 traditional veterinary practitioners across three districts. Their valuable knowledge related to livestock diseases, traditional herbal medicines, preparation methods, and modes of application was systematically documented to ensure this knowledge is preserved for future generations.",
+          "In coordination with KSMPA, Bengaluru, the collected knowledge was compiled and published in the form of a reference book titled “ಕೌಶಲ್ಯ ದೊಂದಿಗೆ ಪಶು ನಾಟಿವೈದ್ಯರ ಗುರುತನೆ (Koushlya Dondige Pashu Nativayadyara Gurutane)”. This publication serves as a practical guide for rural communities and livestock owners.",
+          "The book includes detailed information on livestock treatments along with the practitioners’ names, addresses, and contact numbers, enabling farmers and livestock owners to directly connect with experienced traditional veterinary practitioners when needed.",
+          "This initiative contributes to the conservation of indigenous veterinary practices, promotes sustainable and affordable livestock healthcare, and strengthens recognition of traditional knowledge systems."
+        ],
+        "points": [
+          "Identified and documented 27 traditional veterinary practitioners.",
+          "Coverage across three districts (locations documented during fieldwork).",
+          "Knowledge documented: livestock diseases, herbal medicines, preparation and application methods.",
+          "Publication created in coordination with KSMPA, Bengaluru: “ಕೌಶಲ್ಯ ದೊಂದಿಗೆ ಪಶು ನಾಟಿವೈದ್ಯರ ಗುರುತನೆ (Koushlya Dondige Pashu Nativayadyara Gurutane)”.",
+          "Reference book includes practitioners’ names, addresses and contact numbers for direct farmer access.",
+          "Outcome: preservation of indigenous veterinary knowledge, affordable livestock healthcare, and strengthened recognition of traditional knowledge systems."
+        ]
+      }
+    ]
+  },
+  
+  {
+    id: "school-renovation",
+    title: "School Renovation Project under CSR Activity",
+    description:
+      "Renovation and upgradation of government and rural school infrastructure to create safe, clean, and child-friendly learning environments.",
+    category: "Education",
+    image: "/images/activities/school-renovation/activity-1.jpeg",
+    images: [
+      "/images/activities/school-renovation/activity-1.jpeg",
+      "/images/activities/school-renovation/activity-2.jpeg",
+      "/images/activities/school-renovation/activity-3.jpeg",
+      "/images/activities/school-renovation/activity-4.jpeg",
+      "/images/activities/school-renovation/activity-5.jpeg",
+      "/images/activities/school-renovation/activity-6.jpeg",
+      "/images/activities/school-renovation/activity-7.jpeg",
+      "/images/activities/school-renovation/activity-8.jpeg",
+    
     ],
     sections: [
       {
-        title: "Activity Highlights",
-        paragraphs: [],
-        points: [],
+        title: "Overview",
+        paragraphs: [
+          "Quality education begins with a safe, clean, and inclusive learning environment. Under the CSR-supported School Renovation Project, Taxashila Samajika Hagu Mahila Abhivraddhi Sansthe (R) focuses on improving physical infrastructure in government and rural schools.",
+          "The initiative aims to address infrastructural gaps that hinder effective learning, particularly in schools serving children from economically and socially marginalized communities.",
+          "By upgrading school facilities, the project creates a welcoming atmosphere that encourages regular attendance and supports students’ academic and personal development."
+        ],
       },
-    ],
-  }
-  
+      {
+        title: "Infrastructure Development Activities",
+        paragraphs: [
+          "Renovation activities include repair of classrooms, roofing, flooring, doors, and windows to ensure safety and usability of school buildings.",
+          "Schools are provided with fresh painting, improved lighting and ventilation, and basic safety measures to create a cheerful and child-friendly environment.",
+          "Special focus is placed on upgrading sanitation facilities and ensuring access to clean drinking water, promoting hygiene and overall well-being of students."
+        ],
+      },
+      {
+        title: "Community and Stakeholder Engagement",
+        paragraphs: [
+          "The project is implemented in close collaboration with CSR partners, local authorities, School Development and Monitoring Committees (SDMCs), teachers, and community members.",
+          "Active involvement of parents and local stakeholders helps ensure transparency, ownership, and long-term sustainability of the renovated infrastructure."
+        ],
+      },
+      {
+        title: "Key Components",
+        points: [
+          "Classroom repair, painting, and structural improvements",
+          "Construction or renovation of toilets and handwashing facilities",
+          "Provision of safe drinking water arrangements",
+          "Support for school furniture such as desks and benches",
+          "Basic safety enhancements including electrical repairs and boundary improvements"
+        ],
+      },
+      {
+        title: "Outcomes and Impact",
+        paragraphs: [
+          "Improved school infrastructure has resulted in safer and more engaging learning environments, positively influencing student attendance and retention.",
+          "The project supports the reintegration of Out-of-School Children by making schools more accessible, hygienic, and welcoming.",
+          "Through this CSR initiative, the organization contributes to educational equity, reduced dropout rates, and holistic child development, creating lasting social impact within the community."
+        ],
+      }
+    ]
+  },
+
+  {
+  "id": "school-herbal-garden",
+  "title": "School Herbal Garden Project",
+  "description": "An educational initiative promoting awareness of traditional medicinal plants, nutrition, and sustainable health practices through hands-on learning in school environments.",
+  "category": "Health & Environment",
+  "image": "/images/activities/activity-herbal-garden.jpeg",
+  "images": [
+    "/images/activities/activity-herbal-garden.jpeg",
+    "/images/activities/activity-herbal-garden-1.jpeg",
+    "/images/activities/activity-herbal-garden-2.jpeg",
+
+  ],
+  "sections": [
+    {
+      "title": "Overview",
+      "paragraphs": [
+        "The School Herbal Garden Project is an educational initiative designed to extend learning beyond the classroom by introducing students to traditional medicinal plants, nutrition, and plant-based health practices.",
+        "Implemented in coordination with KSMPA, Bengaluru, the project integrates traditional wisdom with modern education to foster awareness of preventive healthcare, environmental responsibility, and sustainable living.",
+        "By creating herbal gardens within school premises, the project transforms open spaces into living classrooms that support experiential learning."
+      ]
+    },
+    {
+      "title": "Learning Through Medicinal Plants",
+      "paragraphs": [
+        "Students are introduced to a variety of traditional medicinal plants and their everyday uses in maintaining health and wellness.",
+        "Educational sessions explain the medicinal properties, cultivation methods, and cultural significance of commonly used herbs.",
+        "This approach helps students appreciate indigenous knowledge systems and the role of herbal medicine in preventive healthcare."
+      ]
+    },
+    {
+      "title": "Hands-on Garden Activities",
+      "paragraphs": [
+        "Herbal plants are planted and maintained by students within school gardens, encouraging active participation and responsibility.",
+        "Students engage in activities such as soil preparation, planting, watering, and observation of plant growth cycles.",
+        "These hands-on experiences strengthen environmental awareness and promote a deeper connection with nature."
+      ]
+    },
+    {
+      "title": "Nutrition and Traditional Food Awareness",
+      "paragraphs": [
+        "Traditional and nutritious foods are introduced to students through awareness sessions and tasting activities.",
+        "The initiative encourages healthy eating habits by explaining the nutritional value of indigenous foods and plant-based diets.",
+        "Students learn to connect food choices with overall health, sustainability, and cultural heritage."
+      ]
+    },
+    {
+      "title": "Key Components",
+      "points": [
+        "Establishment of herbal gardens within school premises",
+        "Education on traditional medicinal plants and their uses",
+        "Introduction to traditional and nutritious foods through interactive sessions",
+        "Awareness programs on preventive health and herbal medicine",
+        "Promotion of environmental stewardship and sustainable practices"
+      ]
+    },
+    {
+      "title": "Outcomes and Impact",
+      "paragraphs": [
+        "The School Herbal Garden Project enriches students’ understanding of health, nutrition, and traditional knowledge systems.",
+        "It fosters hands-on learning, environmental consciousness, and respect for indigenous wisdom from an early age.",
+        "The herbal gardens serve as long-term educational resources, inspiring healthy lifestyles and sustainable practices for future generations."
+      ]
+    }
+  ]
+}
+
 ];
 

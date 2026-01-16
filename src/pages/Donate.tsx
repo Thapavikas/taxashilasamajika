@@ -1,8 +1,14 @@
+import Donateus from "../assets/Donteus.jpeg";
 const Donate = () => {
   return (
     <>
       {/* PAGE HEADER */}
-      <section className="relative h-[360px] bg-[#1F2937] flex items-center">
+      <section
+        style={{
+          backgroundImage: `url(${Donateus})`,
+        }}
+        className="relative h-[360px] bg-[#1F2937] bg-cover flex items-center"
+      >
         <div className="absolute inset-0 bg-black/40" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">

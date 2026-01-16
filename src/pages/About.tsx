@@ -40,38 +40,37 @@ const About = () => {
 
             <p className="text-[#6B7280] leading-relaxed mb-6">
               <strong className="text-[#1F2937] font-semibold">
-                Taxashila Samajika Hagu Mahila Abhivraddhi Sansthe (R), Karadi
-                Village, Ilkal Taluk, Bagalkot District
+                Taxashila Samajika Hagu Mahila Abhivraddhi Sansthe (R)
               </strong>
-              , registered under No.{" "}
-              <strong className="font-semibold">DRBGK/146/2009-10</strong>, has
-              been actively engaged in{" "}
+              , Karadi Village, Ilkal Taluk, Bagalkot District, registered under
+              No. <strong className="font-semibold">DRBGK/146/2009-10</strong>,
+              has been actively engaged in organized social development work
+              since <strong className="font-semibold">2009</strong>, serving
+              communities across{" "}
+              <strong className="font-semibold">Karnataka, India</strong>. The
+              organization has a strong track record in planning and
+              implementing community-based programs in{" "}
               <strong className="font-semibold">
-                organized social development work for over 16 years across
-                Karnataka India.
+                health, education, environment, women empowerment, livelihood
+                development, and cultural activities
               </strong>
-              . The organization has a proven track record in{" "}
-              <strong className="font-semibold">
-                planning and implementing community-based programs
-              </strong>{" "}
-              in health, education, environment, women empowerment, and
-              livelihood development.
+              .
             </p>
 
             <p className="text-[#6B7280] leading-relaxed mb-6">
               In coordination with{" "}
               <strong className="font-semibold">
-                departments such as AYUSH, KMPB, KBB Department, BBMP, MSME, and
-                Women & Child Welfare
+                departments and institutions such as AYUSH, KSMPA, KBB, BBMP,
+                MSME, Women & Child Welfare Department, and RO Office (UKP)
               </strong>
               , the Sansthe has implemented initiatives including{" "}
               <strong className="font-semibold">
-                AYUSH Sevagram programs, herbal garden development in schools,
-                ethnobotany programs and taxonomy projects
+                AYUSH Sevagram programs, health camps, herbal garden development
+                in schools, ethnobotany and taxonomy programs
               </strong>{" "}
               to document traditional knowledge,{" "}
               <strong className="font-semibold">
-                dyslexia awareness programs
+                dyslexia awareness programs, support for Out-of-School Children
               </strong>
               , and initiatives focused on{" "}
               <strong className="font-semibold">
@@ -83,8 +82,8 @@ const About = () => {
             <p className="text-[#6B7280] leading-relaxed">
               Our work also includes{" "}
               <strong className="font-semibold">
-                cultural promotion, school renovation, plastic reuse awareness,
-                butterfly conservation projects
+                cultural activities and promotion, school renovation, plastic
+                reuse awareness, butterfly conservation projects
               </strong>
               ,{" "}
               <strong className="font-semibold">
@@ -94,11 +93,17 @@ const About = () => {
               <strong className="font-semibold">
                 ZED Certification for MSMEs
               </strong>
-              , and publication of a{" "}
+              , and the publication of a{" "}
               <strong className="font-semibold">
                 book on traditional livestock medicine
               </strong>{" "}
-              to preserve indigenous knowledge.
+              to preserve indigenous knowledge. The organization also works to{" "}
+              <strong className="font-semibold">
+                revive extinct and endangered art forms, traditional skills, and
+                conserve flora and fauna
+              </strong>
+              , contributing to sustainable cultural and environmental
+              preservation.
             </p>
           </div>
 

@@ -14,6 +14,10 @@ const categoryStyles: Record<Category, { badge: string; accent: string }> = {
     badge: "bg-blue-100 text-blue-700",
     accent: "from-blue-500/30",
   },
+  "Health & Environment": {
+    badge: "bg-emerald-100 text-emerald-800",
+    accent: "from-emerald-500/30",
+  },
 };
 
 const Activities = () => {
