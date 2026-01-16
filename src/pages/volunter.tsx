@@ -1,3 +1,5 @@
+import volunterImage from '../assets/VolunterImage.jpeg'
+
 const volunteerRoles = [
   {
     title: "Community Outreach",
@@ -58,7 +60,7 @@ const Volunter = () => {
       <section
         className="relative h-[420px] bg-cover bg-center flex items-center"
         style={{
-          backgroundImage: "url('/src/assets/images/volunteer-banner.jpg')",
+          backgroundImage: `url(${volunterImage})`,
         }}
       >
         <div className="absolute inset-0 bg-black/50" />

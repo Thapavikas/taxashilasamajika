@@ -61,14 +61,24 @@ const ActivityDetails = () => {
               ))}
 
               {section.points && (
-                <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-gray-600">
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {section.points.map((point, i) => (
-                    <li key={i} className="flex gap-2">
-                      <span className="mt-2 h-1.5 w-1.5 bg-gray-400 rounded-full" />
-                      {point}
-                    </li>
+                    <div
+                      key={i}
+                      className="flex gap-4 rounded-xl bg-white p-5 shadow-sm border border-gray-100 hover:shadow-md transition"
+                    >
+                      {/* Icon */}
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-600 font-semibold">
+                        ✓
+                      </div>
+
+                      {/* Text */}
+                      <p className="text-gray-700 leading-relaxed text-sm">
+                        {point}
+                      </p>
+                    </div>
                   ))}
-                </ul>
+                </div>
               )}
             </div>
           ))}
