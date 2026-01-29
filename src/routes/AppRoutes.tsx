@@ -7,6 +7,7 @@ import Activiteis from "../pages/Activiteis";
 import Gallery from "../pages/Gallery";
 import Donate from "../pages/Donate";
 import ActivityDetails from "../pages/ActivityDetails";
+import Documents from "../pages/Documents";
 
 const AppRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const AppRoutes = () => {
       <Route path="/activities" element={<Activiteis />} />
       <Route path="/activities/:id" element={<ActivityDetails />} />
       <Route path="/gallery" element={<Gallery />} />
+      <Route path="/documents" element={<Documents />} />
     </Routes>
   );
 };
