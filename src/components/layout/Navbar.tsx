@@ -17,6 +17,7 @@ const Navbar = () => {
     { to: "/activities", label: "Activities" },
     { to: "/gallery", label: "Gallery" },
     { to: "/contact-us", label: "Contact" },
+    { to: "/documents", label: "Documents" },
   ];
 
   return (
@@ -32,7 +33,7 @@ const Navbar = () => {
             <p className="text-sm sm:text-base font-bold text-[#111827]">
               TAXASHILA SAMAJIKA
             </p>
-            <p className="text-[10px] sm:text-xs font-bold text-[#111827]">
+            <p className="text-sm sm:text-base font-bold text-[#111827]">
               HAGU MAHILA ABHIVRADDHI SANSTHE
             </p>
           </div>
