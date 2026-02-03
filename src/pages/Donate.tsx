@@ -152,7 +152,7 @@ const Donate = () => {
             For donation receipts or compliance queries, please contact
             <span className="font-medium text-[#111827]">
               {" "}
-              support@yourngo.org
+                taxashila.sansthe@gmail.com
             </span>
           </div>
         </div>
