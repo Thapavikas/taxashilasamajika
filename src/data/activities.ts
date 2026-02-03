@@ -448,12 +448,13 @@ export const activities: Activity[] = [
   "title": "School Herbal Garden Project",
   "description": "An educational initiative promoting awareness of traditional medicinal plants, nutrition, and sustainable health practices through hands-on learning in school environments.",
   "category": "Health & Environment",
-  "image": "/images/activities/activity-herbal-garden.jpeg",
+  "image": "/images/activities/garden.jpeg",
   "images": [
-    "/images/activities/activity-herbal-garden.jpeg",
-    "/images/activities/activity-herbal-garden-1.jpeg",
-    "/images/activities/activity-herbal-garden-2.jpeg",
-
+    "/images/activities/garden.jpeg",
+    "/images/activities/garden1.jpeg",
+    "/images/activities/garden2.jpeg",
+    "/images/activities/garden3.jpeg",
+    "/images/activities/garden4.jpeg",
   ],
   "sections": [
     {
@@ -507,7 +508,68 @@ export const activities: Activity[] = [
       ]
     }
   ]
+},
+{
+  "id": "health-plants-bangalore",
+  "title": "Effects of Plants on Human Health in Bangalore",
+  "description": "A detailed study documenting the positive and negative effects of plants on human health and the environment in Bangalore, based on field research conducted in urban parks.",
+  "category": "Health & Environment",
+  "image": "/images/activities/activity-herbal-garden.jpeg",
+  "images": [
+    "/images/activities/activity-herbal-garden.jpeg",
+    "/images/activities/activity-herbal-garden-1.jpeg",
+    "/images/activities/activity-herbal-garden-2.jpeg"
+  ],
+  "sections": [
+    {
+      "title": "Overview",
+      "paragraphs": [
+        "This documentation presents a comprehensive study on the effects of plants on human health and the surrounding environment in Bangalore.",
+        "The research was conducted in prominent urban areas such as Mahalakshmi Layout and Rajajinagar parks, focusing on commonly found plant species and their impact on daily human life."
+      ]
+    },
+    {
+      "title": "Learning Through Medicinal Plants",
+      "paragraphs": [
+        "Medicinal plants play a vital role in traditional healthcare systems and urban well-being.",
+        "The study highlights plant species known for their therapeutic properties as well as those that may cause allergies, toxicity, or other adverse effects when misused."
+      ]
+    },
+    {
+      "title": "Hands-on Garden Activities",
+      "paragraphs": [
+        "Taxonomists conducted field visits to identify, document, and study plant species present in selected parks.",
+        "Hands-on observation, sample collection, and classification activities helped in understanding plant behavior, growth patterns, and health impacts."
+      ]
+    },
+    {
+      "title": "Nutrition and Traditional Food Awareness",
+      "paragraphs": [
+        "Several plants studied are traditionally used in local diets and home remedies.",
+        "The research also emphasizes the importance of awareness regarding edible, medicinal, and non-edible plant species to promote safe and healthy consumption."
+      ]
+    },
+    {
+      "title": "Key Components",
+      "points": [
+        "Documentation of plant species in Mahalakshmi Layout and Rajajinagar parks",
+        "Analysis of positive and negative effects of plants on human health",
+        "Environmental impact assessment of urban vegetation",
+        "Classification of trees, plants, shrubs, creepers, and climbers by family",
+        "Scientific validation through expert-led research"
+      ]
+    },
+    {
+      "title": "Outcomes and Impact",
+      "paragraphs": [
+        "The study provides valuable insights into how urban plant life influences physical health, mental well-being, and environmental quality.",
+        "A four-member research team comprising one PhD scholar, two MSc researchers, and one project coordinator ensured accurate analysis and documentation.",
+        "The findings support better urban planning, public awareness, and informed use of plants for health and environmental sustainability."
+      ]
+    }
+  ]
 }
+
 
 ];
 
