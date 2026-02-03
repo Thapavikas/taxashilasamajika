@@ -1,4 +1,5 @@
 import volunterImage from '../assets/VolunterImage.jpeg'
+import volunterImage1 from "/gallery/9.jpeg";
 
 const volunteerRoles = [
   {
@@ -145,8 +146,8 @@ const Volunter = () => {
             </p>
           </div>
 
-          <div className="h-[420px] bg-[#E5E7EB] rounded-2xl flex items-center justify-center text-[#9CA3AF]">
-            Image Placeholder
+          <div className="h-[420px] bg-[#E5E7EB] flex items-center justify-center text-[#9CA3AF]">
+            <img src={volunterImage1} alt="Volunteer" className=" rounded-2xl  w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -243,7 +244,7 @@ const Volunter = () => {
           </div>
 
           <div className="h-[480px] bg-[#E5E7EB] rounded-2xl flex items-center justify-center text-[#9CA3AF]">
-            Image Placeholder
+            <img src={volunterImage} alt="Volunteer" className=" rounded-2xl  w-full h-full object-cover" />
           </div>
         </div>
       </section>

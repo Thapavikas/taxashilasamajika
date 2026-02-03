@@ -50,7 +50,7 @@ const Donate = () => {
               <strong> must be made only</strong> to the
               <strong> State Bank of India (SBI) FCRA Account</strong>.
               <br />• For <strong>Indian/Domestic donations</strong>, payments
-              may be made to the <strong>SBI</strong> or
+              may be made to the
               <strong> Karnataka Gramin Bank</strong> accounts.
             </p>
           </div>
